@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    transition: all .5s;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/background-body.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#background-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    -moz-opacity: 0.3;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.99));
+}
+
+// deklarujemy zmienne 
+$color-red: #AA1123;
+$color-blue-dark: #31b0d5;
+$color-black: #000;
+$color-grey: #e7e7e7;
+$color-blue-light: #2a6aff;
+
+$bg: #0BAAD4;
+$text: rgba(255,255,255,.7);
+$hover: darken($bg, 10%);
+
+
+

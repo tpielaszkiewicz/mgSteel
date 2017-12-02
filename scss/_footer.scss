@@ -1,0 +1,27 @@
+//podpinamy plik ze zmiennymi
+@import "variables";
+
+#footer {
+    
+    position: fixed;
+    background-color: $color-grey;
+    bottom: 0px;
+    width: 100%;
+    
+    .fa {
+        font-size: 20px;
+        line-height: 30px;
+        color: $color-red;
+        margin: 10px;
+        transition: all .5s;
+        margin: 0px 5px;
+        &:hover {
+            cursor: pointer;
+            color: black;
+        }
+    }
+    p {
+        margin: 10px;
+        line-height: 15px;
+    }
+}

@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    transition: all .5s;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/background-body.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#background-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    -moz-opacity: 0.3;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.99));
+}
+
+.navbar #flag {
+    height: 14px;
+    margin-left: 10px;
+    vertical-align: unset;
+}
+
+.navbar #flag:hover {
+    cursor: pointer;
+}
+
+.navbar #menu-list a:hover {
+    cursor: pointer;
+    color: #AA1123;
+}
+
+.navbar #menu-list a span:hover {
+    cursor: pointer;
+    color: #AA1123;
+}
+
+.navbar #menu-list img {
+    height: 10px;
+    margin-left: 5px;
+    vertical-align: unset;
+}
+
+.navbar #menu-list img:hover {
+    cursor: pointer;
+}
+
+#offer {
+    margin: 40px 0px 40px 0;
+    padding: 20px;
+    position: relative;
+}
+
+#offer h2 {
+    text-indent: 30px;
+    font-weight: 600;
+    color: #AA0000;
+}
+
+#offer p {
+    text-indent: 30px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+#offer h2 {
+    margin-bottom: 20px;
+}
+
+#offer ul {
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+#offer ul:last-of-type {
+    margin-bottom: 25px;
+}
+
+#offer ul span {
+    margin: 10px;
+}
+
+#offer ul .fa {
+    color: #AA1123;
+}
+
+#offer ul li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+#offer #list-image-cont {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+#offer #list-image-cont img {
+    width: 100%;
+}
+
+#offer .invisible {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    transition: all .5s;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/background-body.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#background-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    -moz-opacity: 0.3;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.99));
+}
+
+#footer {
+    position: fixed;
+    background-color: #e7e7e7;
+    bottom: 0px;
+    width: 100%;
+}
+
+#footer .fa {
+    font-size: 20px;
+    line-height: 30px;
+    color: #AA1123;
+    margin: 10px;
+    transition: all .5s;
+    margin: 0px 5px;
+}
+
+#footer .fa:hover {
+    cursor: pointer;
+    color: black;
+}
+
+#footer p {
+    margin: 10px;
+    line-height: 15px;
+}
