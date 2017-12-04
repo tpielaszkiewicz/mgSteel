@@ -63,7 +63,7 @@ var langpl = {
 	},
 	"message-hello": "This is Polish text",
     "sample": "Polsample",
-    "hello": "Szanowni Państwo !",
+    "hello": "Szandasasdowni Państwo !",
     "info-para-1": "Mamy przyjemność przedstawić Państwu firmę MG Steel. Naczelnym założeniem naszej działalności jest jak najlepsze spełnienie wymagań klientów w zakresie kompletacji dostaw wyrobów hutniczych zgodnie z zamówieniem klienta. Głównymi naszymi partnerami są firmy produkcyjne z branży mechanicznej, elektro-mechanicznej, obróbki skrawaniem, kolejnictwa, górnictwa, motoryzacji oraz innych.",
     "info-para-2": "Mamy świadomość, że markę firmy buduje sięprzede wszystkim przez personel. Nasi pracownicy posiadają rzetelnąwiedzę i zawsze sągotowi służyć Państwu fachową radą i pomocą z zkaresu technicznych warunków wykonania przy składaniu zamówień. Nasze doświadczenie i umiejętności zapewniają również właściwy kierunek rozwoju firmy. Powoduje to również, że jesteśmy firmą otwartą i rozumiejącą potrzeby swoihc kilentów. To przede wyszstkim pracownicy dabjąc o poziom świadocznych usług tworzą wizerunek naszej firmy.",
     "info-para-3": "Zachęcamy Państwa do nawiązania współpracy z naszą firmą. Jesteśmy przekonani, że będzie ona powodem obustronnej satysfakcji.",
