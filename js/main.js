@@ -158,7 +158,7 @@ function handleUls() {
         }
     });
     lis.forEach(function (element) {
-        if ($(element).text().indexOf('ul-')) == 0 {
+        if ($(element).text().indexOf('ul-') == 0)  {
             $(element).addClass('invisible');
         }
     });
