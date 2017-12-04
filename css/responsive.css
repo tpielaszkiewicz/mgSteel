@@ -16,6 +16,24 @@
     background-image: url(../img/background-body.jpg);
 }
 
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    transition: all .5s;
+}
+
+#background-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    -moz-opacity: 0.3;
+    background-image: url(../img/background-body.jpg);
+}
+
 @media screen and (max-width: 767px) {
     #background-div {
         background-repeat: no-repeat;
@@ -35,6 +53,14 @@
 
     #o-nas {
         margin: 40px 0px 60px 0;
+    }
+
+    * h2 {
+        font-size: 26px;
+    }
+
+    * p {
+        font-size: 14px;
     }
 }
 

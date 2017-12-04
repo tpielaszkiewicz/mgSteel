@@ -1,4 +1,6 @@
- @mixin header-para{
+@import 'variables'; 
+
+@mixin header-para{
      h2 {
         text-indent: 30px;
         font-weight: 600;
@@ -7,7 +9,7 @@
 
     p {
         text-indent: 30px;
-        font-size: 16px;
+        font-size: $fontpara-big;
         text-align: justify;
     }
 }

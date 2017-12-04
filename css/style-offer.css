@@ -16,6 +16,24 @@
     background-image: url(../img/background-body.jpg);
 }
 
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    transition: all .5s;
+}
+
+#background-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    -moz-opacity: 0.3;
+    background-image: url(../img/background-body.jpg);
+}
+
 .navbar #flag {
     height: 14px;
     margin-left: 10px;
