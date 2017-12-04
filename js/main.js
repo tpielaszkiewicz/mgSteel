@@ -4,6 +4,14 @@
 var globalLanguage = "";
 var locale = "";
 
+// startsWith my implementation (for IE!!1)
+if (!String.prototype.startsWith) {
+  String.prototype.startsWith = function(searchString, position) {
+    position = position || 0;
+    return this.indexOf(searchString, position) === position;
+  };
+}
+
 $(document).ready(function () {
     getLanguage();
     setLanguage();
