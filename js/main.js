@@ -154,6 +154,7 @@ function handleUls() {
     uls.forEach(function (element) {
         if ($(element).text().startsWith('ul-')) {
             $(element).addClass('invisible');
+            
         }
     });
     lis.forEach(function (element) {
