@@ -5,12 +5,12 @@ var globalLanguage = "";
 var locale = "";
 
 // startsWith my implementation (for IE!!1)
-if (!String.prototype.startsWith) {
-  String.prototype.startsWith = function(searchString, position) {
-    position = position || 0;
-    return this.indexOf(searchString, position) === position;
-  };
-}
+//if (!String.prototype.startsWith) {
+//  String.prototype.startsWith = function(searchString, position) {
+//    position = position || 0;
+//    return this.indexOf(searchString, position) === position;
+//  };
+//}
 
 $(document).ready(function () {
     getLanguage();
@@ -152,13 +152,13 @@ function handleUls() {
 //    console.log(uls);
 
     uls.forEach(function (element) {
-        if ($(element).text().startsWith('ul-')) {
+        if ($(element).text().indexOf('ul-') == 0) {
             $(element).addClass('invisible');
             
         }
     });
     lis.forEach(function (element) {
-        if ($(element).text().startsWith('ul-')) {
+        if ($(element).text().indexOf('ul-')) == 0 {
             $(element).addClass('invisible');
         }
     });
