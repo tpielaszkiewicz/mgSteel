@@ -2,13 +2,22 @@
 @import "mixins";
 
 @media screen and (max-width: 767px) {
-
+    #background-div {
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     #certificate {
         margin: 40px 0px 60px 0;
+        
         .image-cont {
             width: 80%;
             left: 10%;
         }
+    }
+    #o-nas {
+        margin: 40px 0px 60px 0;
     }
 
 }

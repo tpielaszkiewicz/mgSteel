@@ -4,13 +4,6 @@
     transition: all .5s;
 }
 
-body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/background-body.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 #background-div {
     position: fixed;
     top: 0;
@@ -18,9 +11,9 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.3;
     -moz-opacity: 0.3;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.99));
+    background-image: url(../img/background-body.jpg);
 }
 
 .navbar #flag {
@@ -91,13 +84,6 @@ body {
     transition: all .5s;
 }
 
-body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/background-body.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 #background-div {
     position: fixed;
     top: 0;
@@ -105,9 +91,9 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.3;
     -moz-opacity: 0.3;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.99));
+    background-image: url(../img/background-body.jpg);
 }
 
 #footer {

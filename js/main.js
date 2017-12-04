@@ -24,36 +24,42 @@ function getLanguage() {
 
 function setLanguage() {
 
-    $.i18n({
-        locale: locale
+    jQuery.i18n({
+        locale: locale,
+        mode: 'map'
     });
 
-    $.i18n().load({
+    //    $.i18n.prop({mode: 'map'});
+    console.log('load?');
+    jQuery.i18n().load({
         'pl': langpl,
         'en': langeng
     }).done(function () {
-        $('.lang').i18n();
+        jQuery('.lang').i18n();
+        console.log('success?');
     });
     // handle different ul sizes
     handleUls();
 
-    $('.sel-lang').on('click', (event) => {
+
+    $('.sel-lang').on('click', function (event) {
 
         // switch language texts
+        console.log(event.delegateTarget.id);
         if (event.delegateTarget.id == "pol") {
             if (globalLanguage == "eng") {
                 // set new locale 
-                $.i18n().locale = "pl";
+                jQuery.i18n().locale = "pl";
                 // regenerate all texts 
-                $('.lang').i18n();
+                jQuery('.lang').i18n();
                 //change flag
                 $('#flag-link').html('POL<img id="flag" src="img/Polen.jpg" alt="">');
                 globalLanguage = "pol"; // set global language for local storage 
             }
         } else if (event.delegateTarget.id == "eng") {
             if (globalLanguage == "pol") {
-                $.i18n().locale = "en";
-                $('.lang').i18n();
+                jQuery.i18n().locale = "en";
+                jQuery('.lang').i18n();
                 $('#flag-link').html('ENG<img id="flag" src="img/Grossbritanien.jpg" alt="">');
                 globalLanguage = "eng"; // set global language for local storage 
             }
@@ -123,16 +129,18 @@ function handleUls() {
     // when for ul or litext is not available, there will be 'ul-' at the begining, then hide this item
     var uls = Object.values($('#offer ul'));
     var lis = Object.values($('#offer li'));
-//    console.log(uls);
-    uls.forEach((element) => {
-        if ($(element).text().startsWith('ul-')){
-           $(element).addClass('invisible');
-        }        
+
+
+    console.log(uls);
+    uls.forEach(function (element) {
+        if ($(element).text().startsWith('ul-')) {
+            $(element).addClass('invisible');
+        }
     });
-    lis.forEach((element) => {
-        if ($(element).text().startsWith('ul-')){
-           $(element).addClass('invisible');
-        }        
+    lis.forEach(function (element) {
+        if ($(element).text().startsWith('ul-')) {
+            $(element).addClass('invisible');
+        }
     });
 
 }
