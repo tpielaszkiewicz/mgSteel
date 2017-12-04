@@ -24,12 +24,14 @@
         a {
             //            display: inline-block;
             //            overflow: hidden;
+            transition: all .5s;
             &:hover {
                 cursor: pointer;
                 color: $color-red;
             }
 
             span {
+                transition: all .5s;
                 &:hover {
                     cursor: pointer;
                     color: $color-red;

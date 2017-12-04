@@ -11,7 +11,10 @@ $(document).ready(function () {
 });
 
 function getLanguage() {
-    globalLanguage = localStorage.getItem('language') || "pol";
+    console.log(window.localStorage);
+    console.log(window.localStorage.getItem('language'));
+    console.log('hm?');
+    globalLanguage = window.localStorage.getItem('language') || "pol";
 
     if (globalLanguage == "pol") {
         $('#flag-link').html('POL<img id="flag" src="img/Polen.jpg" alt="">');
@@ -68,7 +71,7 @@ function setLanguage() {
 
         // handle different ul sizes
         handleUls();
-        localStorage.setItem('language', globalLanguage);
+        window.localStorage.setItem('language', globalLanguage);
     });
 
 };
@@ -127,11 +130,19 @@ function handleUls() {
     $('#offer li').removeClass('invisible');
 
     // when for ul or litext is not available, there will be 'ul-' at the begining, then hide this item
-    var uls = Object.values($('#offer ul'));
-    var lis = Object.values($('#offer li'));
+//    var uls = Object.values($('#offer ul'));
+//    var lis = Object.values($('#offer li'));
 
+    var uls = Object.keys($('#offer ul')).map(function (e) {
+        return $('#offer ul')[e];
+    });
+    
+    var lis = Object.keys($('#offer li')).map(function (e) {
+        return $('#offer li')[e];
+    });
+//    console.log(values);
+//    console.log(uls);
 
-    console.log(uls);
     uls.forEach(function (element) {
         if ($(element).text().startsWith('ul-')) {
             $(element).addClass('invisible');

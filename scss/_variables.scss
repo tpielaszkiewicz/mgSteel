@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    transition: all .5s;
+//    transition: all .5s;
 }
 
 body{
@@ -23,6 +23,7 @@ body{
     opacity: 0.3;
     -moz-opacity: 0.3;
     background-image: url(../img/background-body.jpg);
+//    transition: all 0s;
 }
 
 // deklarujemy zmienne 
