@@ -131,6 +131,7 @@ function sendMessage() {
             }
         });
     })
+    
 };
 
 function handleUls() {
