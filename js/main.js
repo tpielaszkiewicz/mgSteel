@@ -13,6 +13,7 @@ var locale = "";
 //}
 
 $(document).ready(function () {
+    setBackground();
     getLanguage();
     setLanguage();
     sendMessage();
@@ -163,4 +164,10 @@ function handleUls() {
         }
     });
 
+}
+
+function setBackground(){
+    var viewportHeight = screen.height*1.2;
+    $('#background-div').css({ height: viewportHeight });
+    
 }
