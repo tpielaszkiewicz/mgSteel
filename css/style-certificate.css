@@ -32,13 +32,29 @@
     background-image: url(../img/background-body.jpg);
 }
 
-.navbar #flag {
+#main-nav {
+    height: 60px;
+}
+
+.navbar .navbar-brand {
+    padding-top: 5px;
+}
+
+.navbar .navbar-brand img {
+    height: 50px;
+}
+
+.navbar #flag-link {
+    line-height: 30px;
+}
+
+.navbar #flag-link #flag {
     height: 14px;
     margin-left: 10px;
     vertical-align: unset;
 }
 
-.navbar #flag:hover {
+.navbar #flag-link #flag:hover {
     cursor: pointer;
 }
 
@@ -58,6 +74,10 @@
 .navbar #menu-list a span:hover {
     cursor: pointer;
     color: #AA1123;
+}
+
+.navbar #menu-list .menu-link {
+    line-height: 30px;
 }
 
 .navbar #menu-list img {
