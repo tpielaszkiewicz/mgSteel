@@ -168,7 +168,7 @@ function handleUls() {
 }
 
 function setBackground(){
-    var viewportHeight = screen.height*0.9;
+    var viewportHeight = screen.height*0.95;
     $('#background-div').css({ height: viewportHeight });
     
 }

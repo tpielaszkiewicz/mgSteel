@@ -32,8 +32,8 @@
     background-image: url(../img/background-body.jpg);
 }
 
-#main-nav {
-    height: 60px;
+#main-nav .navbar-header {
+    min-height: 60px;
 }
 
 .navbar .navbar-brand {
